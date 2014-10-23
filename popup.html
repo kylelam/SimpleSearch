@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+            body{
+                font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+            }
+        </style>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.2.min.css">
+		<script src="jquery/jquery-1.10.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.2.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body style="height:400px;width:250px;">
+
+
+  <div data-role="page" id="index">
+	<div data-role="header">
+		<center>
+			<b>Career Page Crawler</b>
+		</center>
+	</div>
+	<div data-role="main" class="ui-content">
+		  <span id="currentAddress">http://www.glassdoor.com</span>
+		  
+		  <p>
+			<input type="button" id="crawlCurrent" value="Crawl Only">
+			<font size="1">Use current address as seed page, from there try to crawl to the career page.</font>
+		  </p>		  
+		  <p>
+			<input type="button" id="searchCurrent" value="Search Only">
+			<font size="1">Create 4 Google searches for career page within the current site.</font>
+		  </p>
+		  
+		  <p>
+			<input type="button" id="searchCurrentWithCrawler" value="Crawl and Search">
+			<font size="1">Crawl to the career page, and if crawling fail, perform Google searches.</font>
+		  </p>
+	</div>
+
+  </div> 
+  
+
+  </body>
+</html>
